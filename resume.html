@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Resume Builder</h1>
+        
+        <!-- Resume Editor -->
+        <div id="resume-editor" class="mb-5">
+            <h2>Resume Editor</h2>
+            <form id="resume-form" action="resume_preview.html" method="get">
+                <div class="form-group">
+                    <h1>Form : Part 1 - Contact Information</h1>
+                    <label for="resume-name">Full Name</label>
+                    <input type="text" class="form-control" id="resume-name" name="resume-name">
+                </div>
+                <div class="form-group">
+                    <label for="resume-email">Email in resume</label>
+                    <input type="email" class="form-control" id="resume-email" name="resume-email">
+                </div>
+                <div class="form-group">
+                    <label for="resume-phone">Phone Number in resume</label>
+                    <input type="tel" class="form-control" id="resume-phone" name="resume-phone">
+                </div>
+                <div class="form-group">
+                    <label for="resume-intro">About you</label>
+                    <input type="text" class="form-control" id="resume-intro" name="resume-intro">
+                </div>
+
+                <h1>Form : Part 2 - Education Status </h1>
+                <div class="form-group">
+                    <label for="resume-edu">Education 1</label>
+                    <input type="text" class="form-control" id="resume-edu1" name="resume-edu1">
+                    <label for="resume-edu">Education 2</label>
+                    <input type="text" class="form-control" id="resume-edu2" name="resume-edu2">
+                    <label for="resume-edu">Education 3</label>
+                    <input type="text" class="form-control" id="resume-edu3" name="resume-edu3">
+                </div>
+                <h1>Form : Part 3 - Projects </h1>
+                <div class="form-group">
+                    <label for="resume-edu">Project 1</label>
+                    <input type="text" class="form-control" id="resume-pro1" name="resume-pro1">
+                    <label for="resume-edu">Project 2</label>
+                    <input type="text" class="form-control" id="resume-pro2" name="resume-pro2">
+                </div>
+                <h1>Form : Part 4 - Certification </h1>
+                <div class="form-group">
+                    <label for="resume-edu">Course 1</label>
+                    <input type="text" class="form-control" id="resume-cert1" name="resume-cert1">
+                    <label for="resume-edu">Course 2</label>
+                    <input type="text" class="form-control" id="resume-cert2" name="resume-cert2">
+                </div>
+                <h1>Form : Part 4 - Achievement </h1>
+                <div class="form-group">
+                    <label for="resume-edu">Achievement 1</label>
+                    <input type="text" class="form-control" id="resume-ach1" name="resume-ach1">
+                    <label for="resume-edu">Achievement 2</label>
+                    <input type="text" class="form-control" id="resume-ach2" name="resume-ach2">
+                    <label for="resume-edu">Achievement 3</label>
+                    <input type="text" class="form-control" id="resume-ach3" name="resume-ach3">
+                    <label for="resume-edu">Achievement 4</label>
+                    <input type="text" class="form-control" id="resume-ach4" name="resume-ach4">
+                </div>
+                <h1>Form : Part 5 - Skills </h1>
+                <div class="form-group">
+                    <label for="resume-edu">Skill 1</label>
+                    <input type="text" class="form-control" id="resume-ski1" name="resume-ski1">
+                    <label for="resume-edu">Skill 2</label>
+                    <input type="text" class="form-control" id="resume-ski2" name="resume-ski2">
+                    <label for="resume-edu">Skill 3</label>
+                    <input type="text" class="form-control" id="resume-ski3" name="resume-ski3">
+                    <label for="resume-edu">Skill 4</label>
+                    <input type="text" class="form-control" id="resume-ski4" name="resume-ski4">
+                </div>
+                <h1>Form : Part 6 - Languages known </h1>
+                <div class="form-group">
+                    <label for="resume-edu">Language 1</label>
+                    <input type="text" class="form-control" id="resume-lang1" name="resume-lang1">
+                    <label for="resume-edu">Language 2</label>
+                    <input type="text" class="form-control" id="resume-lang2" name="resume-lang2">
+                    <label for="resume-edu">Language 3</label>
+                    <input type="text" class="form-control" id="resume-lang3" name="resume-lang3">
+                </div>
+                <h1>Form : Part 7 - Linkedin Link </h1>
+                <div class="form-group">
+                    <label for="resume-edu">Linkdin Page</label>
+                    <input type="link" class="form-control" id="resume-link1" name="resume-link1">
+                </div>
+                <!-- Additional fields for work experience, education, skills, etc. -->
+                <button type="submit" class="btn btn-success">Generate Resume Preview</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

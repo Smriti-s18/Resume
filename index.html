@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        font-family: 'Arial Black', sans-serif; /* Example of a bold font */
+        font-size: 16px;
+        color: #000000; /* Dark gray text color */
+        background-color: #F5E8DD; /* Soft peach background color */
+    }
+    
+    h1 {
+        font-family: 'Times New Roman', Times, serif; /* Example of a modern font */
+        color: #000000; /* Blue heading color */
+    }
+    
+    
+    p {
+        line-height: 1.6; /* Increased line height for better readability */
+        font-family: 'Segoe UI', sans-serif; /* Example of a clean font */
+        color: #000000; /* Soft gray text color */
+    }
+
+    .container {
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the container height to be 100% of the viewport height */
+    opacity: 0.7;
+    border: 15px solid black;
+    
+}
+
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4"style="opacity: 100%; font-size: 50px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Resume Builder</h1>
+        <div id="auth-section" class="mb-5">
+            <h2 style="opacity: 100%;font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Register / Login</h2>
+            <form id="auth-form" action="profile.html" method="get">
+                <div class="form-group">
+                    <label for="profile-name" style="opacity: 100%;font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Full Name</label>
+                    <input type="text" class="form-control" id="profile-name" name="profile-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"style="opacity: 100%;font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"style="opacity: 100%;font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

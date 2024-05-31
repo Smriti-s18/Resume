@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Font Styles */
+        body {
+    font-family: 'Arial Black', sans-serif; /* Example of a bold font */
+    font-size: 16px;
+    color: #000000; /* Dark gray text color */
+    background-color: #F5E8DD; /* Soft peach background color */
+}
+
+h1, h3 {
+    font-family: 'Times New Roman', Times, serif; /* Example of a modern font */
+    color: #000000; /* Blue heading color */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif; /* Example of a modern font */
+    color: #000000; /* Warm beige heading color */
+}
+
+p {
+    line-height: 1.6; /* Increased line height for better readability */
+    font-family: 'Segoe UI', sans-serif; /* Example of a clean font */
+    color: #000000; /* Soft gray text color */
+}
+
+/* Borders and Backgrounds */
+hr {
+    border: 2px dotted #364533; /* Soft green border for horizontal lines */
+    margin-top: 20px; /* Add margin above horizontal lines */
+    margin-bottom: 20px; /* Add margin below horizontal lines */
+}
+
+ul, ol {
+    margin-top: 10px; /* Add margin above lists */
+    margin-bottom: 10px; /* Add margin below lists */
+    background-color: #EED3D9; /* Soft pink background color for lists */
+    padding: 25px; /* Add padding to lists */
+    border: 5px solid #5475a7; /* Soft blue border for lists */
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+}
+#resume-details{
+    margin-top: 10px; /* Add margin above lists */
+    margin-bottom: 10px; /* Add margin below lists */
+    background-color: #EED3D9; /* Soft pink background color for lists */
+    padding: 25px; /* Add padding to lists */
+    border: 5px solid #5475a7; /* Soft blue border for lists */
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+}
+#intro{
+    margin-top: 10px; /* Add margin above lists */
+    margin-bottom: 10px; /* Add margin below lists */
+    background-color: #EED3D9; /* Soft pink background color for lists */
+    padding: 25px; /* Add padding to lists */
+    border: 5px solid #5475a7; /* Soft blue border for lists */
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+}
+
+img {
+    clip-path: circle(50%);
+    width: 160px;
+    height: 160px;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4 font-family:'Times New Roman', Times, serif">Resume Preview</h1>
+        
+        <!-- Displaying submitted resume details -->
+        <div id="resume-details">
+            <h1 style="font-family:'Times New Roman', Times, serif">INTRODUCTION</h1>
+            <div id="intro">
+            
+            <p><strong>Full Name:</strong> <span id="full-name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>About:</strong> <span id="about"></span></p>
+            </div>
+            <hr>
+            <h1>EDUCATION</h1>
+            <ul>
+                <li> <span id="edu1"></span></li>
+                <li> <span id="edu2"></span></li>
+                <li> <span id="edu3"></span></li>
+            </ul>
+            <hr>
+            <h1>PROJECTS</h1>
+            <ul>
+                <li> <span id="pro1"></span></li>
+                <li> <span id="pro2"></span></li>
+            </ul>
+            <hr>
+            <h1>CERTIFICATIONS</h1>
+            <ul>
+                <li> <span id="cert1"></span></li>
+                <li> <span id="cert2"></span></li>
+            </ul>
+            <hr>
+            <h1>ACHIEVEMENTS</h1>
+            <ul>
+                <li> <span id="ach1"></span></li>
+                <li> <span id="ach2"></span></li>
+                <li> <span id="ach3"></span></li>
+                <li> <span id="ach4"></span></li>
+            </ul>
+            <hr>
+            <h1>SKILLS</h1>
+            <ul>
+                <li> <span id="ski1"></span></li>
+                <li> <span id="ski2"></span></li>
+                <li> <span id="ski3"></span></li>
+                <li> <span id="ski4"></span></li>
+            </ul>
+            <hr>
+            <h1>LANGUAGES KNOWN</h1>
+            <ul>
+                <li> <span id="lang1"></span></li>
+                <li> <span id="lang2"></span></li>
+                <li> <span id="lang3"></span></li>
+            </ul>
+            <hr>
+            <h1>LINKEDIN PAGE</h1>
+            <p><a id="link1" href="#" target="_blank"></a></p>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('full-name').textContent = urlParams.get('resume-name') || '-';
+        document.getElementById('email').textContent = urlParams.get('resume-email') || '-';
+        document.getElementById('phone').textContent = urlParams.get('resume-phone') || '-';
+        document.getElementById('about').textContent = urlParams.get('resume-intro') || '-';
+        document.getElementById('edu1').textContent = urlParams.get('resume-edu1') || '-';
+        document.getElementById('edu2').textContent = urlParams.get('resume-edu2') || '-';
+        document.getElementById('edu3').textContent = urlParams.get('resume-edu3') || '-';
+        document.getElementById('pro1').textContent = urlParams.get('resume-pro1') || '-';
+        document.getElementById('pro2').textContent = urlParams.get('resume-pro2') || '-';
+        document.getElementById('cert1').textContent = urlParams.get('resume-cert1') || '-';
+        document.getElementById('ach2').textContent = urlParams.get('resume-ach2') || '-';
+        document.getElementById('ach3').textContent = urlParams.get('resume-ach3') || '-';
+        document.getElementById('ach4').textContent = urlParams.get('resume-ach4') || '-';
+        document.getElementById('ski1').textContent = urlParams.get('resume-ski1') || '-';
+        document.getElementById('ski2').textContent = urlParams.get('resume-ski2') || '-';
+        document.getElementById('ski3').textContent = urlParams.get('resume-ski3') || '-';
+        document.getElementById('ski4').textContent = urlParams.get('resume-ski4') || '-';
+        document.getElementById('lang1').textContent = urlParams.get('resume-lang1') || '-';
+        document.getElementById('lang2').textContent = urlParams.get('resume-lang2') || '-';
+        document.getElementById('lang3').textContent = urlParams.get('resume-lang3') || '-';
+        document.getElementById('link1').textContent = "Visit LinkedIn Profile";
+        document.getElementById('link1').href = urlParams.get('resume-link1');
+
+    </script>
+</body>
+</html>
+        

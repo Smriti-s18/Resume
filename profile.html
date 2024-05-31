@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>body {
+        font-family: 'Arial Black', sans-serif; /* Example of a bold font */
+        font-size: 16px;
+        color: #000000; /* Dark gray text color */
+        background-color: #F5E8DD; /* Soft peach background color */
+    }
+    
+    h1 {
+        font-family: 'Times New Roman', Times, serif; /* Example of a modern font */
+        color: #000000; /* Blue heading color */
+    }
+    
+    
+    p {
+        line-height: 1.6; /* Increased line height for better readability */
+        font-family: 'Segoe UI', sans-serif; /* Example of a clean font */
+        color: #000000; /* Soft gray text color */
+    }
+
+    #header {
+    background-image: url("bgm.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the container height to be 100% of the viewport height */
+    opacity: 0.7;
+    border: 15px solid black;
+    padding: 10px;
+}
+
+    
+</style>
+</head>
+<body>
+    <div id="header">
+    <br><br><br><br>
+    <h1 style="text-align: center;font-size: 60px; font-family: 'Times New Roman', Times, serif;">Profile Page</h1>
+    <br><br><br>
+    <p style="text-align: center; font-size: 50px; font-family: 'Times New Roman', Times, serif;"><strong>Hello! Welcome </strong> <span id="full-name"></span></p>
+    <br><br><br>
+    <p style="text-align: center;font-size: 30px; font-family: 'Times New Roman', Times, serif;"><a href="resume.html" method="get" >CLICK HERE TO START BUILDING YOUR RESUME!</a></p>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('full-name').textContent = urlParams.get('profile-name') || '-';
+        document.getElementById('email').textContent = urlParams.get('email') || '-';
+        document.getElementById('phone').textContent = urlParams.get('phone') || '-';
+    </script>
+</body>
+</html>
